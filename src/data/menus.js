@@ -43,7 +43,6 @@ class Menus {
 	
 	setMenus () {
 		this.menus = this.guideList.concat(this.componentsList, this.otherList)
-		console.log(this.menus)
 	}
 	
 	getMenus () {
