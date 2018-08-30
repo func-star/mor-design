@@ -10,7 +10,7 @@ import Router from 'moreact-router'
 export default class DefaultLayout extends Component {
 	componentDidMount () {
 		this.wrap = this.refs.wrap
-		Router.addEventListener('onChange', res => {
+		Router.addEventListener('onChange', () => {
 			this.wrap.scrollTop = 0
 		})
 	}

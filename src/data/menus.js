@@ -3,7 +3,7 @@ class Menus {
 		this.setMenus()
 	}
 	
-	menus = [{
+	guideList = [{
 		name: '快速使用',
 		url: 'how-to-use'
 	}, {
@@ -11,7 +11,16 @@ class Menus {
 		url: 'custom-theme'
 	}]
 	
-	menusLast = [{
+	componentsList = [{
+		name: '基础组件',
+		children: [{
+			name: 'Button',
+			name2: '按钮',
+			url: 'button'
+		}]
+	}]
+	
+	otherList = [{
 		name: 'react 系列产品',
 		children: [{
 			name: 'moreact-router',
@@ -33,7 +42,8 @@ class Menus {
 	}]
 	
 	setMenus () {
-		this.menus = this.menus.concat(this.menusLast)
+		this.menus = this.guideList.concat(this.componentsList, this.otherList)
+		console.log(this.menus)
 	}
 	
 	getMenus () {

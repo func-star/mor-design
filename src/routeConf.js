@@ -1,6 +1,8 @@
 import DefaultLayout from 'views/layout/default'
-import NoMatch from 'pages/noMatch'
-import HowToUse from 'pages/howToUse'
+import NoMatch from 'pages/NoMatch'
+import HowToUse from 'pages/HowToUse'
+import CustomTheme from 'pages/CustomTheme'
+import Button from 'pages/button'
 
 const routeList = {
 	index: 'how-to-use',
@@ -12,7 +14,12 @@ const routeList = {
 	}, {
 		layout: DefaultLayout,
 		routes: {
-			'custom-theme': HowToUse
+			'custom-theme': CustomTheme
+		}
+	}, {
+		layout: DefaultLayout,
+		routes: {
+			'button': Button
 		}
 	}, {
 		routes: {
