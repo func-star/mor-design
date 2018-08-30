@@ -1,0 +1,131 @@
+.mona-markdown {
+	color: #333;
+	h1, h2, h3, h4, h5, h6 {
+		&:first-child {
+			margin-top: 0;
+		}
+		margin-top: 32px;
+		margin-bottom: 16px;
+		font-weight: normal;
+		color: #222;
+	}
+	p, blockquote, ul, ol, dl, table, pre {
+		margin-top: 0;
+		margin-bottom: 16px;
+	}
+	ul, ol {
+		padding: 10px 0;
+		li {
+			color: #34495e;
+			font-size: 14px;
+			line-height: 22px;
+			margin: 5px 0 5px 5px;
+			padding-left: 15px;
+			position: relative;
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 6px;
+				height: 6px;
+				margin-top: 8px;
+				border-radius: 50%;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				border: 1px solid #666;
+			}
+		}
+	}
+	blockquote {
+		padding: 10px 15px;
+		margin: 20px 0;
+		border-radius: 4px;
+		background-color: fade(@primary-color, 10%);
+		color: rgba(52, 73, 94, .8);
+		border-left: 3px solid @primary-color;
+		font-size: 13px;
+		p {
+			margin-bottom: 3px;
+		}
+		& > blockquote {
+			margin: 10px 0;
+			background-color: transparent;
+			border-bottom: 1px solid fade(@primary-color, 20%);
+		}
+	}
+	h1 {
+		font-size: 2em;
+		margin: 0.67em 0;
+	}
+	code {
+		padding: 1px 5px;
+		font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+		font-size: 13px;
+		color: #607d8b;
+		background-color: #f3f6fa;
+		border-radius: 3px;
+	}
+	pre {
+		padding: 10px 20px;
+		margin-top: 0;
+		overflow: auto;
+		margin-bottom: 16px;
+		font: 14px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+		color: #567482;
+		word-wrap: normal;
+		background-color: #f3f6fa;
+		border: solid 1px #eee;
+		border-radius: 3px;
+		code, tt {
+			display: inline;
+			max-width: initial;
+			padding: 0;
+			margin: 0;
+			font-size: 13px;
+			overflow: initial;
+			line-height: inherit;
+			word-wrap: normal;
+			background-color: transparent;
+			border: 0;
+		}
+		& > code {
+			padding: 0;
+			margin: 0;
+			color: #455a64;
+			line-height: 1.6;
+			word-break: normal;
+			white-space: pre;
+			background: transparent;
+			border: 0;
+		}
+		code {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+	}
+
+	table {
+		width: 100%;
+		font-size: 13px;
+		line-height: 1.5;
+		margin-bottom: 45px;
+		background-color: #fff;
+		border-collapse: collapse;
+		color: #34495e;
+		th {
+			&:first-child {
+				padding-left: 10px;
+			}
+			padding: 10px 8px;
+			text-align: left;
+			font-weight: 400;
+			background-color: #f5f7fa;
+			border: 1px solid #eaeefb;
+		}
+		td {
+			padding: 10px 8px;
+			border: 1px solid #eaeefb;
+		}
+	}
+}
