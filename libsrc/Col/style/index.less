@@ -1,0 +1,49 @@
+@import "../../style/common";
+
+.mona-row-grid(@col) {
+	.loop( @i ) when ( @i > 0 ) {
+		.mona-col-@{i} {
+			width: percentage(@i/@col);
+		}
+		.loop(@i - 1);
+	}
+	.loop(@col)
+}
+
+.mona-row-size-grid(@size,@col) {
+	.loop( @i ) when ( @i > 0 ) {
+		.mona-col-@{size}-@{i} {
+			width: percentage(@i/@col) !important;
+		}
+		.loop(@i - 1);
+	}
+	.loop(@col)
+}
+
+.mona-row-grid(24);
+
+@media screen and (max-width: @layout-width-sm) {
+	.mona-row-size-grid(sm, 24);
+}
+
+@media screen and (max-width: @layout-width-xs) {
+	.mona-row-size-grid(xs, 24);
+}
+
+@media screen and (min-width: @layout-width-md) {
+	.mona-row-size-grid(md, 24);
+}
+
+@media screen and (min-width: @layout-width-lg) {
+	.mona-row-size-grid(lg, 24);
+}
+
+@media screen and (min-width: @layout-width-xl) {
+	.mona-row-size-grid(xl, 24);
+}
+
+@media screen and (min-width: @layout-width-xxl) {
+	.mona-row-size-grid(xxl, 24);
+}
+
+

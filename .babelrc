@@ -5,6 +5,13 @@
 		"stage-0"
 	],
 	"plugins": [
+		[
+			"import",
+			{
+				"libraryName": "mona",
+				"libraryDirectory": "libsrc"
+			}
+		],
 		"jsx-control-statements",
 		"transform-object-assign"
 	]

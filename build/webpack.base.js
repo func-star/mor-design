@@ -21,9 +21,9 @@ module.exports = {
 			path.resolve(__dirname, '../src/style')
 		],
 		alias: {
+			'mona': path.resolve(__dirname, '../'),
 			'src': path.resolve(__dirname, '../src'),
 			'react': path.resolve('./node_modules/react'),
-			'mona': path.resolve('./node_modules/mor-mobile'),
 			'classnames': path.resolve('./node_modules/classnames'),
 			'autoprefixer': path.resolve('./node_modules/autoprefixer'),
 			'react-dom': path.resolve('./node_modules/react-dom')

@@ -2,7 +2,7 @@ import DefaultLayout from 'views/layout/default'
 import NoMatch from 'pages/NoMatch'
 import HowToUse from 'pages/HowToUse'
 import CustomTheme from 'pages/CustomTheme'
-import Button from 'pages/button'
+import Button from 'pages/Button'
 
 const routeList = {
 	index: 'how-to-use',
