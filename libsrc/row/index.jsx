@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Col from '../Col'
+import Col from '../col'
 import classNames from 'classnames'
 
 export default class Row extends Component {

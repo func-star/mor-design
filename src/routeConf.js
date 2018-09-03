@@ -1,9 +1,14 @@
 import DefaultLayout from 'views/layout/default'
-import NoMatch from 'pages/NoMatch'
-import HowToUse from 'pages/HowToUse'
-import CustomTheme from 'pages/CustomTheme'
-import Button from 'pages/Button'
-import Input from 'pages/Input'
+import NoMatch from 'pages/noMatch'
+import HowToUse from 'pages/howToUse'
+import CustomTheme from 'pages/customTheme'
+import Button from 'pages/button'
+import Input from 'pages/input'
+import Layout from 'pages/layout'
+import Modal from 'pages/modal'
+import Notification from 'pages/notification'
+import Switch from 'pages/switch'
+import Tabs from 'pages/tabs'
 
 const routeList = {
 	type: 'history',
@@ -27,6 +32,31 @@ const routeList = {
 		layout: DefaultLayout,
 		routes: {
 			'input': Input
+		}
+	}, {
+		layout: DefaultLayout,
+		routes: {
+			'layout': Layout
+		}
+	}, {
+		layout: DefaultLayout,
+		routes: {
+			'modal': Modal
+		}
+	}, {
+		layout: DefaultLayout,
+		routes: {
+			'notification': Notification
+		}
+	}, {
+		layout: DefaultLayout,
+		routes: {
+			'switch': Switch
+		}
+	}, {
+		layout: DefaultLayout,
+		routes: {
+			'tabs': Tabs
 		}
 	}, {
 		routes: {

@@ -21,6 +21,26 @@ class Menus {
 			name: 'Input',
 			name2: 'Input',
 			url: 'input'
+		}, {
+			name: 'Layout',
+			name2: 'Layout',
+			url: 'layout'
+		}, {
+			name: 'Modal',
+			name2: 'Modal',
+			url: 'modal'
+		}, {
+			name: 'Notification',
+			name2: 'Notification',
+			url: 'notification'
+		}, {
+			name: 'Switch',
+			name2: 'Switch',
+			url: 'switch'
+		}, {
+			name: 'Tabs',
+			name2: 'Tabs',
+			url: 'tabs'
 		}]
 	}]
 	

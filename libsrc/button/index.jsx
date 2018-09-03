@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import BaseComponent from '../BaseComponent'
-import Row from '../Row'
-import Icon from '../Icon'
+import Row from '../row'
+import Icon from '../icon'
 import classNames from 'classnames'
 import ButtonGroup from './group'
 
