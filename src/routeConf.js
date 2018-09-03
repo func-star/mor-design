@@ -6,6 +6,7 @@ import Button from 'pages/Button'
 import Input from 'pages/Input'
 
 const routeList = {
+	type: 'history',
 	index: 'how-to-use',
 	routeList: [{
 		layout: DefaultLayout,
