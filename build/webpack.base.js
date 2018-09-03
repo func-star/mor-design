@@ -36,6 +36,14 @@ module.exports = {
 		new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /zh-cn/)
 	],
 	module: {
-		rules: []
+		rules: [{
+			test: /\.(woff|woff2|eot|ttf|otf)$/,
+			use: ['file-loader'],
+			exclude: /node_modules/
+		}, {
+			test: /\.md$/,
+			use: ['html-loader', 'markdown-loader'],
+			exclude: /node_modules/
+		}]
 	}
 }

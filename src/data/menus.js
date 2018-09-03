@@ -17,6 +17,10 @@ class Menus {
 			name: 'Button',
 			name2: '按钮',
 			url: 'button'
+		}, {
+			name: 'Input',
+			name2: 'Input',
+			url: 'input'
 		}]
 	}]
 	

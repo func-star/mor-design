@@ -28,11 +28,6 @@ config.module.rules = config.module.rules.concat([
 		test: /\.(js|jsx)$/,
 		use: ['react-hot-loader', 'babel-loader'],
 		exclude: /node_modules/
-	},
-	{
-		test: /\.md$/,
-		use: ['html-loader', 'markdown-loader'],
-		exclude: /node_modules/
 	}
 ])
 

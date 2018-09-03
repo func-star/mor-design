@@ -71,7 +71,7 @@
 
 .mona-btn-loading {
 	font-size: 14px;
-	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .mona-btn-group {
@@ -108,11 +108,11 @@
 	.mona-btn-color(@color; @background; @border);
 	/*&:focus,*/
 	&:hover {
-		.mona-btn-color(@color; ~`colorPalette("@{background}", 7)`; ~`colorPalette("@{border}", 7)`);
+		.mona-btn-color(@color; ~`colorPalette("@{background}", 5.3)`; ~`colorPalette("@{border}", 5.3)`);
 	}
 	&:active,
 	&.active {
-		.mona-btn-color(@color; ~`colorPalette("@{background}", 8)`; ~`colorPalette("@{border}", 8)`);
+		.mona-btn-color(@color; ~`colorPalette("@{background}", 6.8)`; ~`colorPalette("@{border}", 6.8)`);
 	}
 	.mona-btn-disabled(@color; @background; @border);
 }
@@ -120,11 +120,11 @@
 .mona-btn-border(@color; @background; @border) {
 	.mona-btn-color(@color; @background; @border);
 	&:hover {
-		.mona-btn-color(~`colorPalette("@{color}", 7)`; @background; ~`colorPalette("@{border}", 7)`);
+		.mona-btn-color(~`colorPalette("@{color}", 5.3)`; @background; ~`colorPalette("@{border}", 5.3)`);
 	}
 	&:active,
 	&.active {
-		.mona-btn-color(~`colorPalette("@{color}", 8)`; @background; ~`colorPalette("@{border}", 8)`);
+		.mona-btn-color(~`colorPalette("@{color}", 6.8)`; @background; ~`colorPalette("@{border}", 6.8)`);
 	}
 
 	.mona-btn-disabled(@color; @background; @border);

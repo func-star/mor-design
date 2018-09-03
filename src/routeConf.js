@@ -3,6 +3,7 @@ import NoMatch from 'pages/NoMatch'
 import HowToUse from 'pages/HowToUse'
 import CustomTheme from 'pages/CustomTheme'
 import Button from 'pages/Button'
+import Input from 'pages/Input'
 
 const routeList = {
 	index: 'how-to-use',
@@ -20,6 +21,11 @@ const routeList = {
 		layout: DefaultLayout,
 		routes: {
 			'button': Button
+		}
+	}, {
+		layout: DefaultLayout,
+		routes: {
+			'input': Input
 		}
 	}, {
 		routes: {

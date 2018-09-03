@@ -58,8 +58,8 @@ export default class Button extends BaseComponent {
 				</If>
 				<If condition={_loading}>
 					<Row align="center">
-						{children}
 						<Icon name="loading" className="mona-btn-loading" />
+						{children}
 					</Row>
 				</If>
 			</button>
