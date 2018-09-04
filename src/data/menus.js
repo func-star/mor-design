@@ -41,6 +41,10 @@ class Menus {
 			name: 'Tabs',
 			name2: 'Tabs',
 			url: 'tabs'
+		}, {
+			name: 'Tooltip',
+			name2: 'Tooltip',
+			url: 'tooltip'
 		}]
 	}]
 	

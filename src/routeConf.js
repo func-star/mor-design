@@ -9,9 +9,9 @@ import Modal from 'pages/modal'
 import Notification from 'pages/notification'
 import Switch from 'pages/switch'
 import Tabs from 'pages/tabs'
+import Tooltip from 'pages/tooltip'
 
 const routeList = {
-	type: 'history',
 	index: 'how-to-use',
 	routeList: [{
 		layout: DefaultLayout,
@@ -57,6 +57,11 @@ const routeList = {
 		layout: DefaultLayout,
 		routes: {
 			'tabs': Tabs
+		}
+	}, {
+		layout: DefaultLayout,
+		routes: {
+			'tooltip': Tooltip
 		}
 	}, {
 		routes: {
