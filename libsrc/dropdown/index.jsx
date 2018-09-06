@@ -35,7 +35,7 @@ export default class Dropdown extends Component {
 	
 	componentDidUpdate () {
 		let dom = findDOMNode(this)
-		if (dom == this.childDom) {
+		if (dom === this.childDom) {
 			return
 		}
 		if (dom) {
@@ -60,22 +60,22 @@ export default class Dropdown extends Component {
 	
 	register (dom) {
 		const { trigger } = this.props
-		if (trigger == 'hover') {
+		if (trigger === 'hover') {
 			dom.addEventListener('mouseenter', this.eventShow, false)
 			dom.addEventListener('mouseleave', this.eventHide, false)
 		}
-		if (trigger == 'click') {
+		if (trigger === 'click') {
 			dom.addEventListener('click', this.eventToggle, false)
 			document.addEventListener('click', this.leaveCheck, true)
 		}
-		if (trigger == 'blurCheck') {
+		if (trigger === 'blurCheck') {
 			document.addEventListener('click', this.leaveCheck, true)
 		}
 	}
 	
 	dropdownDomRegister (dom) {
 		const { trigger } = this.props
-		if (trigger == 'hover') {
+		if (trigger === 'hover') {
 			this.dropdownNode.addEventListener('mouseenter', this.eventShow, false)
 			this.dropdownNode.addEventListener('mouseleave', this.eventHide, false)
 		}
