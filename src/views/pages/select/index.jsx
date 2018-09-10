@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Select, SelectPkg } from 'mona'
+import { Select, SelectPkg, TreeSelect } from 'mona'
 
 const Option = Select.Option
 export default class SelectDemo extends Component {
@@ -47,6 +47,9 @@ export default class SelectDemo extends Component {
 							</Option>
 						</For>
 					</Select>
+				</div>
+				<div className="p w-200">
+					<TreeSelect data={data} showSearch allowClear />
 				</div>
 			</div>
 		)

@@ -14,6 +14,7 @@ import Radio from 'pages/radio'
 import Checkbox from 'pages/checkbox'
 import DatePicker from 'pages/date-picker'
 import Select from 'pages/select'
+import Pagination from 'pages/pagination'
 
 const routeList = {
 	index: 'how-to-use',
@@ -86,6 +87,11 @@ const routeList = {
 		layout: DefaultLayout,
 		routes: {
 			'select': Select
+		}
+	}, {
+		layout: DefaultLayout,
+		routes: {
+			'pagination': Pagination
 		}
 	}, {
 		routes: {

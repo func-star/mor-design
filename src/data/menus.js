@@ -61,6 +61,10 @@ class Menus {
 			name: 'Select',
 			name2: 'Select',
 			url: 'select'
+		}, {
+			name: 'Pagination',
+			name2: 'Pagination',
+			url: 'pagination'
 		}]
 	}]
 	
