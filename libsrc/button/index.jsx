@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import BaseComponent from '../BaseComponent'
+import BaseComponent from '../base-component'
 import Row from '../row'
 import Icon from '../icon'
 import classNames from 'classnames'
