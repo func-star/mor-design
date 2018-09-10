@@ -1,6 +1,6 @@
 {
 	"name": "mor-design",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Mona系列 - React组件库",
 	"scripts": {
 		"start": "node ./build/webpack.dev.js",
