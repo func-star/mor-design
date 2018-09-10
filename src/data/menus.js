@@ -57,6 +57,10 @@ class Menus {
 			name: 'DatePicker',
 			name2: 'DatePicker',
 			url: 'date-picker'
+		}, {
+			name: 'Select',
+			name2: 'Select',
+			url: 'select'
 		}]
 	}]
 	

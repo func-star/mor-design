@@ -1,0 +1,133 @@
+@import "../../style/common";
+
+.mona-baseSelect-list {
+	background-color: #fff;
+	/*border: 1px solid #DEDEDE;*/
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	max-height: 250px;
+	overflow: auto;
+}
+
+.mona-baseSelect-list-empty {
+	padding: 10px 8px;
+	color: #999;
+}
+
+.mona-baseSelect-option {
+	padding: 10px 8px;
+	white-space: nowrap;
+	cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-transition: background .3s ease;
+	transition: background .3s ease;
+	&.mona-select-option-selected {
+		background: #f3f5f8;
+	}
+
+	&:hover,
+	&.mona-select-option-active {
+		background-color: #f5fbff;
+	}
+
+	&:first-child {
+		border-radius: 4px 4px 0 0;
+	}
+	&:last-child {
+		border-radius: 0 0 4px 4px;
+	}
+}
+
+.mona-baseSelect-holder-input {
+	position: relative;
+	input {
+		padding-right: 20px;
+	}
+}
+
+.mona-baseSelect-holder-input-allowClear {
+	&:hover {
+		.mona-baseSelect-holder-input-arrow {
+			display: none;
+		}
+		.mona-baseSelect-holder-input-clear {
+			display: flex;
+		}
+	}
+}
+
+.mona-baseSelect-holder-input-clear,
+.mona-baseSelect-holder-input-arrow {
+	display: none;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 30px;
+	font-size: 14px;
+	cursor: pointer;
+	color: #999;
+}
+
+.mona-baseSelect-holder-input-arrow {
+	display: flex;
+	transition: transform 0.4s;
+	font-size: 12px;
+}
+
+.mona-baseSelect-holder-input-active {
+	.mona-baseSelect-holder-input-arrow {
+		transform: rotate(180deg);
+	}
+}
+
+.mona-baseSelect-multiple-item {
+	background: #fafafa;
+	border: 1px solid #e8e8e8;
+	font-size: 14px;
+	border-radius: 2px;
+	height: @form-item-height - 6px;
+	line-height: 1;
+	padding: 0 6px;
+	margin: 2px;
+}
+
+.mona-baseSelect-multiple-del {
+	font-size: 9px;
+	transform: scale(0.75);
+	color: #999;
+	margin-left: 3px;
+	padding: 2px;
+	cursor: pointer;
+}
+
+.mona-baseSelect-multiple-holder {
+	min-height: @form-item-height;
+	background: #fff;
+	border: 1px solid #dedede;
+	border-radius: 4px;
+	padding: 0 4px;
+	position: relative;
+	cursor: text;
+	transition: all @transition-time;
+	&:hover {
+		border-color: @primary-color;
+	}
+}
+
+.mona-baseSelect-multiple-holder-disabled {
+	cursor: not-allowed;
+	.mona-baseSelect-multiple-del {
+		cursor: not-allowed;
+	}
+}
+
+.mona-baseSelect-multiple-ipt {
+	max-width: 100%;
+	border: 0 none;
+	//width:14px;
+	width: 100%;
+}

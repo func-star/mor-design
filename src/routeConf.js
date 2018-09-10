@@ -13,6 +13,7 @@ import Tooltip from 'pages/tooltip'
 import Radio from 'pages/radio'
 import Checkbox from 'pages/checkbox'
 import DatePicker from 'pages/date-picker'
+import Select from 'pages/select'
 
 const routeList = {
 	index: 'how-to-use',
@@ -80,6 +81,11 @@ const routeList = {
 		layout: DefaultLayout,
 		routes: {
 			'date-picker': DatePicker
+		}
+	}, {
+		layout: DefaultLayout,
+		routes: {
+			'select': Select
 		}
 	}, {
 		routes: {
