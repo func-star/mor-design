@@ -15,6 +15,7 @@ import Checkbox from 'pages/checkbox'
 import DatePicker from 'pages/date-picker'
 import Select from 'pages/select'
 import Pagination from 'pages/pagination'
+import Form from 'pages/form'
 
 const routeList = {
 	index: 'how-to-use',
@@ -92,6 +93,11 @@ const routeList = {
 		layout: DefaultLayout,
 		routes: {
 			'pagination': Pagination
+		}
+	}, {
+		layout: DefaultLayout,
+		routes: {
+			'form': Form
 		}
 	}, {
 		routes: {

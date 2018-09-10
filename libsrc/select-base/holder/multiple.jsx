@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
 import Row from '../../row'
-import BaseComponent from '../../baseComponent'
+import BaseComponent from '../../base-component'
 import Icon from '../../icon'
 import MultipleIpt from './multipleIpt'
 
-export default class HolderInput extends BaseComponent {
+export default class SelectBaseMultiple extends BaseComponent {
 	constructor (props) {
 		super(props)
 		this.ctrl = this.props.ctrl

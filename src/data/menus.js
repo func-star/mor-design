@@ -65,6 +65,10 @@ class Menus {
 			name: 'Pagination',
 			name2: 'Pagination',
 			url: 'pagination'
+		}, {
+			name: 'Form',
+			name2: 'Form',
+			url: 'form'
 		}]
 	}]
 	

@@ -1,0 +1,113 @@
+@import "../../style/common";
+
+.mona-pagination-default {
+	display: inline-block;
+	line-height: 28px;
+	text-align: center;
+	.mona-pagination-item {
+		cursor: pointer;
+		border-radius: 4px;
+		min-width: 28px;
+		padding: 0 3px;
+		height: 28px;
+		border: 1px solid @pagination-border;
+		background-color: #fff;
+		user-select: none;
+		&:hover {
+			border-color: @datepicker-primary-color;
+		}
+		&.active {
+			background-color: @datepicker-primary-color;
+			border-color: @datepicker-primary-color;
+			color: #fff;
+		}
+		&.disabled {
+			cursor: not-allowed;
+			img {
+				opacity: 0.8;
+			}
+		}
+	}
+	.mona-pagination-pageSizeOpt {
+		width: 84px;
+	}
+	.mona-pagination-jumper-ipt {
+		width: 50px;
+		height: 28px;
+	}
+	.mona-pagination-prev {
+		height: 12px;
+		width: auto;
+	}
+	.mona-pagination-more {
+		height: auto;
+		width: 16px;
+		opacity: 0.8;
+		cursor: pointer;
+	}
+	.mona-pagination-pageSize-sel {
+		.mona-input {
+			height: 28px;
+		}
+	}
+}
+
+.mona-pagination-small {
+	display: inline-block;
+	line-height: 20px;
+	text-align: center;
+	.mona-pagination-item {
+		cursor: pointer;
+		border-radius: 4px;
+		min-width: 20px;
+		padding: 0 3px;
+		height: 20px;
+		user-select: none;
+		.mona-icon {
+			transform: scale(1, 0.8);
+			display: block;
+		}
+		&:hover {
+			color: @datepicker-primary-color;
+		}
+		&.active {
+			background-color: @datepicker-primary-color;
+			color: #fff;
+		}
+		&.disabled {
+			cursor: not-allowed;
+			img {
+				opacity: 0.8;
+			}
+		}
+	}
+	.mona-pagination-pageSizeOpt {
+		width: 84px;
+	}
+	.mona-pagination-jumper-ipt {
+		width: 50px;
+		height: 22px;
+		&:focus {
+			outline: 0;
+			box-shadow: 0 0 0 1px rgba(255, 38, 86, 0.2);
+		}
+		&:hover,
+		&:focus {
+			border-color: #ff2555;
+		}
+	}
+	.mona-pagination-prev {
+		height: 8px;
+	}
+	.mona-pagination-more {
+		width: 8px;
+		opacity: 0.8;
+		cursor: pointer;
+	}
+	.mona-pagination-pageSize-sel {
+		.mona-input {
+			height: 22px;
+		}
+	}
+
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class MultipleIpt extends Component {
+export default class SelectMultipleIpt extends Component {
 	focus () {
 		this.refs.ipt.focus()
 	}

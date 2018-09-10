@@ -4,7 +4,7 @@ import HolderInput from '../select-base/holder/index'
 import Ctrl from './ctrl'
 import List from './list'
 
-export default class moSingleSelect extends SelectBase {
+export default class TreeSelectSingle extends SelectBase {
 	Ctrl = Ctrl
 	Holder = HolderInput
 	trigger = 'blurCheck'

@@ -3,7 +3,7 @@ import { Checkbox } from 'mona'
 
 const CheckboxGroup = Checkbox.Group
 
-export default class Test extends Component {
+export default class CheckboxDemo extends Component {
 	state = {
 		value: [2]
 	}

@@ -1,0 +1,72 @@
+@import "../../style/common";
+
+.mona-treeSelect-list {
+	padding: 4px;
+}
+
+.mona-treeSelect-item {
+	font-size: 12px;
+	position: relative;
+	.mona-treeSelect-arrow {
+		/*position:absolute;*/
+		display: flex;
+		cursor: pointer;
+		/*z-index:2;*/
+		width: 24px;
+		height: 24px;
+		/*left:0;*/
+		/*top:50%;*/
+		/*margin-top:-12px;*/
+		transform: rotate(270deg);
+		transition: transform;
+		.mona-icon {
+			color: #666;
+			display: none;
+			font-size: 9px;
+			transform: scale(0.45);
+		}
+	}
+	&.mona-treeSelect-item-group {
+		.mona-treeSelect-arrow {
+			.mona-icon {
+				display: block;
+			}
+		}
+	}
+	&.mona-treeSelect-item-group-visible {
+		.mona-treeSelect-arrow {
+			transform: rotate(0);
+		}
+	}
+}
+
+.mona-treeSelect-item-label {
+	cursor: pointer;
+	border-radius: 2px;
+	padding: 2px 5px;
+	/*display: inline-block;*/
+	white-space: nowrap;
+	/*min-width:100%;*/
+	font-size: 14px;
+	&:hover {
+		background-color: @primary-2;
+	}
+}
+
+.mona-treeSelect-item-active {
+	.mona-treeSelect-item-label {
+		cursor: pointer;
+		background-color: @primary-3;
+		/*color:#fff;*/
+	}
+}
+
+.mona-treeSelect-checkable {
+	.mona-treeSelect-item-label {
+		background-color: transparent;
+	}
+}
+
+.mona-treeSelect-child-wrap {
+	padding-left: 15px;
+}

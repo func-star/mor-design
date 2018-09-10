@@ -1,0 +1,56 @@
+@import "../../style/common";
+
+.mona-tabs-default {
+	.mona-tabs-nav {
+		position: relative;
+		border-bottom: 1px solid #d9d9d9;
+	}
+	.mona-tabs-nav-item {
+		height: 38px;
+		padding: 0 20px;
+		cursor: pointer;
+		&.active {
+			color: @info-color;
+		}
+	}
+	.mona-tabs-nav-ink-bar {
+		z-index: 1;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		box-sizing: border-box;
+		height: 2px;
+		background-color: @info-color;
+		transform-origin: 0 0;
+	}
+
+	.mona-tabs-nav-ink-bar-animated {
+		transition: transform .3s cubic-bezier(.645, .045, .355, 1), width .3s cubic-bezier(.645, .045, .355, 1), -webkit-transform .3s cubic-bezier(.645, .045, .355, 1);
+	}
+}
+
+.mona-tabs-card {
+	.mona-tabs-nav {
+		position: relative;
+		border-bottom: 1px solid #d9d9d9;
+	}
+	.mona-tabs-nav-item {
+		height: 32px;
+		padding: 0 20px;
+		cursor: pointer;
+		border: 1px solid #d9d9d9;
+		margin-bottom: -1px;
+		border-radius: 4px 4px 0 0;
+		background-color: #f9f9f9;
+		margin-right: 2px;
+		&.active {
+			background-color: #fff;
+			color: @info-color;
+			border-bottom: 1px solid #fff;
+		}
+	}
+}
+
+.mona-tabs-content {
+	padding-top: @space;
+}

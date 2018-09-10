@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import classNames from 'classnames'
 import Input from '../../input'
 
-export default class HolderInput extends Component {
+export default class SelectHolder extends Component {
 	constructor (props) {
 		super(props)
 		this.ctrl = this.props.ctrl

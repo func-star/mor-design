@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
 import Input from '../../input'
-import BaseComponent from '../../baseComponent'
+import BaseComponent from '../../base-component'
 import Icon from '../../icon'
 
-export default class HolderInput extends BaseComponent {
+export default class SelectBaseHolder extends BaseComponent {
 	constructor (props) {
 		super(props)
 		this.ctrl = this.props.ctrl

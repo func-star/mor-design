@@ -1,6 +1,6 @@
 import Events from 'mona-events'
 
-export default class SelectCtrlBase extends Events {
+export default class SelectBaseCtrl extends Events {
 	//需要继承重写
 	toggleSelect (val) {}
 	

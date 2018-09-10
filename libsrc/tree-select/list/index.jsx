@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import Row from '../../row'
-import BaseComponent from '../../baseComponent'
+import BaseComponent from '../../base-component'
 import Icon from '../../icon'
 import Checkbox from '../../checkbox'
 import Checker from '../../checker'
 
 import classNames from 'classnames'
 
-export default class List extends BaseComponent {
+export default class TreeSelectList extends BaseComponent {
 	constructor (props) {
 		super(props)
 		this.ctrl = props.ctrl

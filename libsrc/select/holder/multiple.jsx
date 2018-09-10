@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Row from '../../row'
 import MultipleIpt from './multipleIpt'
 
-export default class HolderInput extends Component {
+export default class SelectMultiple extends Component {
 	constructor (props) {
 		super(props)
 		this.ctrl = this.props.ctrl

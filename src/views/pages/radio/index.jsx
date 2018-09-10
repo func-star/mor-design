@@ -3,7 +3,7 @@ import { Radio } from 'mona'
 
 const RadioGroup = Radio.Group
 
-export default class Test extends Component {
+export default class RadioDemo extends Component {
 	state = {
 		value: 2
 	}

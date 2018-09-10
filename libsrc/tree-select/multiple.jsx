@@ -4,7 +4,7 @@ import HolderInput from '../select-base/holder/multiple'
 import Ctrl from './ctrl/multiple.js'
 import List from './list'
 
-export default class moMultipleSelect extends SelectBase {
+export default class TreeSelectMultiple extends SelectBase {
 	Ctrl = Ctrl
 	Holder = HolderInput
 	trigger = 'blurCheck'

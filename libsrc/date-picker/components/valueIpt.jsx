@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import moment from 'moment'
 
-export default class moDateValueIpt extends Component {
+export default class monaDateValueIpt extends Component {
 	componentDidMount () {
 		const { date, ctrl, exactTime } = this.props
 		let format = ['YYYY', '-MM', '-DD', ' HH', ':mm', ':ss'].slice(0, exactTime).join('')

@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import DatePicker from './datePicker'
 import Tool from '../tool'
 
-export default class moDatePicker extends Component {
+export default class monaDatePicker extends Component {
 	state = {}
 	key = Date.now()
 	

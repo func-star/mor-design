@@ -1,0 +1,26 @@
+@import "../../style/common";
+
+.mona-selectPkg {
+	position: relative;
+}
+
+.mona-selectPkg-clean {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 24px;
+	color: rgba(0, 0, 0, 0.25);
+	font-size: 16px;
+}
+
+.mona-selectPkg-cleanable {
+	.mona-selectPkg-clean {
+		display: none;
+	}
+	&:hover {
+		.mona-selectPkg-clean {
+			display: flex;
+		}
+	}
+}

@@ -1,13 +1,16 @@
 {
 	"name": "mor-design",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "Mona系列 - React组件库",
-	"main": "index.js",
 	"scripts": {
 		"start": "node ./build/webpack.dev.js",
 		"build": "export NODE_ENV=prodution && node ./build/webpack.build.js",
 		"babel": "rm -rf lib && BABEL_ENV=prodution && babel libsrc --out-dir lib --copy-files"
 	},
+	"files": [
+		"lib"
+	],
+	"main": "./lib",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/func-star/mor-design.git"

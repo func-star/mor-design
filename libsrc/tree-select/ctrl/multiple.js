@@ -2,7 +2,7 @@ import SelectBase from '../../select-base'
 
 const CtrlBase = SelectBase.BaseCtrl
 //单选
-export default class SelectCtrl extends CtrlBase {
+export default class TreeSelectMultiple extends CtrlBase {
 	selected = []
 	selectedValues = []
 	expandedKeys = []

@@ -1,6 +1,6 @@
 import Events from 'mona-events'
 
-export default class moDateCtrl extends Events {
+export default class monaDateCtrl extends Events {
 	prevImg = 'https://s10.mogucdn.com/mlcdn/c45406/170727_0l6cl6jf4c07ekc970077hjbjh7jh_66x64.png'
 	nextImg = 'https://s10.mogucdn.com/mlcdn/c45406/170727_7ek4199ecckifg7c58df5ga636808_66x64.png'
 	pImg = 'https://s10.mogucdn.com/mlcdn/c45406/170727_06ik6lff20jfejfg8ji2hhk688bdh_34x64.png'

@@ -3,7 +3,7 @@ import SelectBase from '../select-base'
 import HolderInput from '../select-base/holder/index'
 import Ctrl from './ctrl/index'
 
-export default class moSingleSelect extends SelectBase {
+export default class SelectSingle extends SelectBase {
 	autoValueList = true
 	Ctrl = Ctrl
 	Holder = HolderInput

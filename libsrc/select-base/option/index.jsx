@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import { findDOMNode } from 'react-dom'
 import Row from '../../row'
 import Tool from '../../tool'
-import BaseComponent from '../../baseComponent'
+import BaseComponent from '../../base-component'
 import classNames from 'classnames'
 
-export default class Option extends BaseComponent {
+export default class SelectBaseOption extends BaseComponent {
 	onChange () {
 		this.setState({})
 	}

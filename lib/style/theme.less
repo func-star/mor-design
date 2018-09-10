@@ -1,0 +1,238 @@
+@import "./color/colors";
+
+@mona-prefix							:mona;
+
+@blue-6: #2a9cf7;
+@purple-6: #722ed1;
+@cyan-6: #13c2c2;
+@green-6: #52c41a;
+@magenta-6: #eb2f96;
+@pink-6: #eb2f96;
+@red-6: #f5222d;
+@orange-6: #fa8c16;
+@yellow-6: #fadb14;
+@volcano-6: #fa541c;
+@geekblue-6: #2f54eb;
+@lime-6: #a0d911;
+@gold-6: #faad14;
+
+//布局
+@layout-width-xs				:480px;
+@layout-width-sm				:576px;
+@layout-width-md				:768px;
+@layout-width-lg				:992px;
+@layout-width-xl				:1200px;
+@layout-width-xxl				:1600px;
+
+//时间
+@transition-time				:.2s;
+//颜色
+@background-color-light : hsv(0, 0, 98%);
+@background-color-lighter: hsv(0, 0, 99%);
+@background-color		  : hsv(0, 0, 96%);
+
+@primary-color					:@blue-6;
+@info-color							:#61A1EB;
+@success-color					:#2CB22D;
+@error-color						:#EF2E23;
+@warning-color					:#ff904b;
+@normal-color           :#d9d9d9;
+@disabled-color					:#D2D2D2;
+
+@primary-1: color(~`colorPalette("@{primary-color}", 1)`);
+@primary-2: color(~`colorPalette("@{primary-color}", 2)`);
+@primary-3: color(~`colorPalette("@{primary-color}", 3)`);
+@primary-4: color(~`colorPalette("@{primary-color}", 4)`);
+@primary-5: color(~`colorPalette("@{primary-color}", 5)`);
+@primary-6: @primary-color;
+@primary-7: color(~`colorPalette("@{primary-color}", 7)`);
+@primary-8: color(~`colorPalette("@{primary-color}", 8)`);
+@primary-9: color(~`colorPalette("@{primary-color}", 9)`);
+@primary-10: color(~`colorPalette("@{primary-color}", 10)`);
+
+
+@disabled-bg						:@background-color;
+
+//字体
+@color-dark					:#333;
+@color							:#555;
+@color-light				:#999;
+@color-lighter			:#dce5ec;
+@color-red					:#F55C44;
+@color-white				:#FFF;
+
+@font-size-lg				:20px;
+@font-size-md				:16px;
+@font-size					:14px;
+@font-size-sm				:13px;
+@font-size-xs				:12px;
+@yahei							:'PingFang SC',arial, "Hiragino Sans GB", "Microsoft Yahei", '微软雅黑', '宋体',Tahoma, Arial, Helvetica, STHeiti;
+@font-family   :-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-seri;
+
+@line-height				:1.428;
+//尺寸
+/*@space-xxs								:3px;*/
+@space-xs								:5px;
+@space-sm								:10px;
+@space									:15px;
+@space-md								:20px;
+@space-lg								:30px;
+@space-xl								:35px;
+
+
+// ------ bg ------
+@bg-light								:#f6f8f8;
+@bg-lighter							:#fafafa;
+@bg-white								:#fff;
+
+//边框 圆角
+@border-color						:#F5F5F5;
+
+@border-radius-lg				:6px;
+@border-radius					:4px;
+@border-radius-sm				:3px;
+
+
+//基本
+
+
+//loading
+/*@loading-height					:60px;*/
+
+//modal
+@modal-background				:#fff;
+@modal-mask-background	:rgba(51, 51, 51, 0.6);
+@modal-radius						:5px;
+@modal-top							:30px;
+@modal-body-lineHeight	:1.5;
+@modal-btn-active				:#f6f6f6;
+
+
+// z-index list
+@zindex-modal-mask			:990;
+@zindex-modal						:1000;
+
+@zindex-toaster					:1010;
+@zindex-notification		:1010;
+@zindex-popover					:1030;
+@zindex-dropdown				:1050;
+@zindex-tooltip					:1060;
+
+
+//outline
+@outline-blur-size      : 0;
+@outline-width          : 2px;
+@outline-color          : @primary-color;
+
+//form
+@form-item-height-lg          : 40px;
+@form-item-height-md          : 36px;
+@form-item-height			        : 32px;
+@form-item-height-sm          : 24px;
+@form-item-height-xs          : 20px;
+
+@form-control-padding-horizontal: 10px;
+
+//form
+@form-item-space							:15px;
+@form-item-space-sm						:10px;
+
+//button
+@btn-font-weight        : 400;
+@btn-line-height				: 1.2;
+@btn-border-radius			: @border-radius;
+@btn-border-radius-sm   : @border-radius;
+
+@btn-primary-color      : #fff;
+@btn-primary-bg         : @primary-color;
+
+@btn-warning-color      : #fff;
+@btn-warning-bg         : @warning-color;
+
+@btn-error-color      : #fff;
+@btn-error-bg         : @error-color;
+
+@btn-success-color      : #fff;
+@btn-success-bg         : @success-color;
+
+@btn-default-color      : @color;
+@btn-default-bg         : #fff;
+@btn-default-border     : @input-border-color;
+
+@btn-danger-color       : @error-color;
+@btn-danger-bg          : @background-color;
+@btn-danger-border      : @input-border-color;
+
+@btn-disable-color      : @disabled-color;
+@btn-disable-bg         : @disabled-bg;
+@btn-disable-border     : @input-border-color;
+
+@btn-font-size-lg       : @font-size;
+@btn-font-size-sm       : @font-size;
+
+@btn-padding-xs         : 0 @space-xs - 1px;
+@btn-padding-sm         : 0 @space-sm - 1px;
+@btn-padding		        : 0 @space - 1px;
+@btn-padding-md	        : 0 @space-md - 1px;
+@btn-padding-lg         : 0 @space-lg - 1px;
+
+@btn-height-lg          : @form-item-height-lg;
+@btn-height-md          : @form-item-height-md;
+@btn-height        : @form-item-height;
+@btn-height-sm          : @form-item-height-sm;
+@btn-height-xs          : @form-item-height-xs;
+
+@btn-circle-size        : @btn-height;
+@btn-circle-size-lg     : @btn-height-lg;
+@btn-circle-size-sm     : @btn-height-sm;
+
+@btn-group-border       : @primary-5;
+
+
+
+// Input
+@input-color						:@color;
+@input-font-size				:@font-size;
+@input-bg								:#fff;
+@input-border-color			:#DEDEDE;
+@input-padding          :0 @form-control-padding-horizontal;
+@input-border-radius		:@border-radius;
+@input-bg-disabled			:@disabled-bg;
+
+@input-height-lg          : @form-item-height-lg;
+@input-height-md          : @form-item-height-md;
+@input-height			        : @form-item-height;
+@input-height-sm          : @form-item-height-sm;
+@input-height-xs          : @form-item-height-xs;
+
+
+//textares
+@textarea-padding         :4px @form-control-padding-horizontal;
+@textarea-line-height			:1.5;
+
+//switch
+@switch-color						:@primary-color;
+@switch-width						:46px;
+@switch-width-sm				:36px;
+@switch-width-md				:56px;
+
+@radio-border: #d9d9d9;
+@radio-checked-color: #108ee9;
+@checkbox-border: #d9d9d9;
+@checkbox-checked-color: #108ee9;
+
+//checkbox
+@checkbox-width:16px;
+
+//datepicker
+@datepicker-width :278px;
+@datepicker-default-height:30px;
+@datepicker-day-height:32px;
+@datepicker-font-size:14px;
+@datepicker-bg-color :@primary-color;
+@datepicker-bg-color-light :#F6F8FA;
+
+//pagination
+@pagination-border	:#DEDEDE;
+@datepicker-primary-color :@primary-color;
+

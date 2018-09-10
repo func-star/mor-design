@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Tool from '../../tool'
-import BaseComponent from '../../baseComponent'
+import BaseComponent from '../../base-component'
 
-export default class List extends BaseComponent {
+export default class SelectBaseList extends BaseComponent {
 	constructor (props) {
 		super(props)
 		this.ctrl = props.ctrl

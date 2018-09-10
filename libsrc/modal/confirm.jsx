@@ -32,7 +32,7 @@ export default class Confirm extends Component {
 			<If condition={this.state.visible}>
 				<Modal
 					style={{ width: '340px', top: '80px' }}
-					className={classNames('mo-modal-confirm', className)}
+					className={classNames('mona-modal-confirm', className)}
 					visible={this.state.visible}
 					onConfirm={this.onConfirm.bind(this)}
 					title={title}

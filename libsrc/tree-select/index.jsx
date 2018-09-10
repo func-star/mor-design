@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Multiple from './multiple'
 import Single from './single'
 
-export default class moSelect extends Component {
+export default class TreeSelect extends Component {
 	getName (name = 'name') {
 		return this.props[name]
 	}

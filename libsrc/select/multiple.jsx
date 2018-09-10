@@ -3,7 +3,7 @@ import SelectBase from '../select-base'
 import HolderInput from '../select-base/holder/multiple'
 import Ctrl from './ctrl/multiple.js'
 
-export default class moMultipleSelect extends SelectBase {
+export default class SelectMultiple extends SelectBase {
 	autoValueList = true
 	Ctrl = Ctrl
 	Holder = HolderInput

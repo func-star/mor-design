@@ -1,0 +1,19 @@
+@import "../../style/common";
+@import './font';
+
+@keyframes loadingCircle {
+	0% {
+		transform-origin: 50% 50%;
+		transform: rotate(0deg)
+	}
+	to {
+		transform-origin: 50% 50%;
+		transform: rotate(1turn)
+	}
+}
+
+.mona-icon-loading {
+	display: inline-block;
+	animation: loadingCircle 1s infinite linear;
+}
+

@@ -6,7 +6,7 @@ import MonthSelect from './month'
 import YearSelect from './year'
 //import ValueIpt from './valueIpt';
 
-export default class moDateSelect extends Component {
+export default class monaDateSelect extends Component {
 	static defaultProps = {
 		exactTime: 'date'
 	}

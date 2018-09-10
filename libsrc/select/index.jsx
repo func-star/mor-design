@@ -5,7 +5,7 @@ import Single from './single'
 
 let Option = SelectBase.Option
 
-export default class moSelect extends Component {
+export default class MonaSelect extends Component {
 	static Option = Option
 	
 	render () {

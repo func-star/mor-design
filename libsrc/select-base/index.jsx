@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
 import Dropdown from '../dropdown'
-import BaseComponent from '../baseComponent'
+import BaseComponent from '../base-component'
 import List from './list'
 import Option from './option'
 import BaseCtrl from './ctrl/base.js'
 
-export default class BaseSelect extends BaseComponent {
+export default class SelectBase extends BaseComponent {
 	static BaseCtrl = BaseCtrl
 	static Option = Option
 	sameWidth = true

@@ -18,7 +18,7 @@ export default class Content extends Component {
 		const { info, ctrl, ...props } = this.props
 		let activeKey = ctrl.getActiveKey(info)
 		return (
-			<div className="mo-tabs-content">
+			<div className="mona-tabs-content">
 				<ContentStorage>
 					<For each="item" of={info}>
 						<ContentItem condition={activeKey === item.key} key={item.key}>
