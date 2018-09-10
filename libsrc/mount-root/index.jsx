@@ -1,56 +1,62 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'
 
 //选择挂在节点
 export default class MountRoot extends Component {
 	static defaultProps = {
-		closeDelay:0			//延迟关闭时间(毫秒)
-	};
-	componentDidMount(){
+		closeDelay: 0			//延迟关闭时间(毫秒)
+	}
+	
+	componentDidMount () {
 		if (this.props.visible) {
-			this.mountRoot(this.props);
+			this.mountRoot(this.props)
 		}
 	}
-	componentWillUnmount(){
+	
+	componentWillUnmount () {
 		//卸载
-		if(!this.node){
-			return;
+		if (!this.node) {
+			return
 		}
-		ReactDOM.unmountComponentAtNode(this.node);
-		this.node.remove();
+		ReactDOM.unmountComponentAtNode(this.node)
+		this.node.remove()
 	}
-	componentWillReceiveProps(nextProps) {
+	
+	componentWillReceiveProps (nextProps) {
 		//显示
 		if (nextProps.visible && !this.props.visible) {
-			this.mountRoot(nextProps);
+			this.mountRoot(nextProps)
 		}
 		//卸载
 		if (this.props.visible && !nextProps.visible) {
-			if(this.props.closeDelay){
+			if (this.props.closeDelay) {
 				this.domRender(nextProps)
 			}
-			setTimeout(()=>{
-				ReactDOM.unmountComponentAtNode(this.node);
-				this.node.remove();
-			},this.props.closeDelay)
-		}else if(nextProps.visible){
+			setTimeout(() => {
+				ReactDOM.unmountComponentAtNode(this.node)
+				this.node.remove()
+			}, this.props.closeDelay)
+		} else if (nextProps.visible) {
 			this.domRender(nextProps)
 		}
 	}
-	mountRoot(props){
-		this.node = document.createElement('div');
-		this.node.className = props.className || '';
-		let rootDom = document.getElementsByTagName('body')[0];
-		if(this.props.getContainer){
-			rootDom = this.props.getContainer();
+	
+	mountRoot (props) {
+		this.node = document.createElement('div')
+		this.node.className = props.className || ''
+		let rootDom = document.getElementsByTagName('body')[0]
+		if (this.props.getContainer) {
+			rootDom = this.props.getContainer()
 		}
-		rootDom.appendChild(this.node);
-		this.domRender(props);
+		rootDom.appendChild(this.node)
+		this.domRender(props)
 	}
-	domRender(props){
-		ReactDOM.render(props.children,this.node);
+	
+	domRender (props) {
+		ReactDOM.render(props.children, this.node)
 	}
-	render() {
-		return null;
+	
+	render () {
+		return null
 	}
 }

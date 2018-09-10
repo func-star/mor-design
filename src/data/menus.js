@@ -45,6 +45,18 @@ class Menus {
 			name: 'Tooltip',
 			name2: 'Tooltip',
 			url: 'tooltip'
+		}, {
+			name: 'Radio',
+			name2: 'Radio',
+			url: 'radio'
+		}, {
+			name: 'Checkbox',
+			name2: 'Checkbox',
+			url: 'checkbox'
+		}, {
+			name: 'DatePicker',
+			name2: 'DatePicker',
+			url: 'date-picker'
 		}]
 	}]
 	

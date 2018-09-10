@@ -47,7 +47,7 @@ export default class Checker extends Component {
 		} else {
 			this.value = val
 		}
-		if (!(this.value instanceof Array) && this.props.type != 'string') {
+		if (!(this.value instanceof Array) && this.props.type !== 'string') {
 			this.value = [val]
 		}
 		if (typeof(val) === 'string' && this.props.type === 'string') {
